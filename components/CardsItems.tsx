@@ -5,13 +5,14 @@ import React, { useState } from 'react'
 import Card from './Card'
 import Modal from './modal/Modal';
 
-interface Props {
+type Props = {
   title : string
   cards : any[]
   link? : string
+  type : "projects" | "certificates"
 }
 
-const CardItems = ({title,cards,link}:Props) => {
+const CardItems = ({title,cards,link,type}:Props) => {
   const [cardModal, setCardModal] = useState({
     state : false,
     image : "",
@@ -25,7 +26,7 @@ const CardItems = ({title,cards,link}:Props) => {
   }
   return <>
     <AnimatePresence mode='wait'>
-{    cardModal.state && <Modal description={cardModal.description} image={cardModal.image} onClose={closeModal} title={cardModal.title} url={cardModal.url} skills={cardModal.skills}  />}
+{    cardModal.state && <Modal type={type} description={cardModal.description} image={cardModal.image} onClose={closeModal} title={cardModal.title} url={cardModal.url} skills={cardModal.skills}  />}
     </AnimatePresence>
 
     <div className='relative bg-white  pt-30 flex flex-wrap items-center justify-start gap-4 w-10/12'>

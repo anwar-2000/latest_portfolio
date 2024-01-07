@@ -1,18 +1,65 @@
 "use client";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 
 interface Props {}
 
 const Hero = () => {
-  return (
-    <div className="flex flex-col items-start justify-start w-10/12 pt-4 pb-14">
+  const [cursorPosition, setCursorPosition] = useState({ x: 400, y: 140 });
+  const handleMouseMove = (event:any) => {
+    setCursorPosition({
+      x: event.clientX,
+      y: event.clientY,
+    });
+  };
+  const handleMouseLeave = (event:any) => {
+    setCursorPosition({
+      x:400,
+      y:140,
+    });
+  };
+  return <>
+    <div className="relative flex flex-col items-start justify-start w-10/12 pt-4 pb-14" >
+    <motion.img
+        src="/images/wave.png"
+        alt="Cursor Image"
+        style={{
+          position: 'absolute',
+          top: 15,
+          left: 140,
+          width : "30px",
+          pointerEvents: 'none', 
+        }}
+        className="block md:hidden"
+        initial={{ opacity: 0, rotate : 20 }}
+        whileInView={{ opacity: 1, rotate: [20, 0, 20, 0, 20, 0,20,0,20,0] }}
+        exit={{ opacity: 0, }}
+        transition={{ duration: 1, ease: 'linear' }}
+      />
+    <motion.img
+        src="/images/wave.png"
+        alt="Cursor Image"
+        style={{
+          position: 'absolute',
+          top: cursorPosition.y - 100,
+          left: cursorPosition.x - 100,
+          width : "50px",
+          pointerEvents: 'none', 
+        }}
+        className="hidden md:block"
+        initial={{ opacity: 0, rotate : 20 }}
+        whileInView={{ opacity: 1, rotate: [20, 0, 20, 0, 20, 0,20,0,20,0] }}
+        exit={{ opacity: 0, }}
+        transition={{ duration: 1, ease: 'linear' }}
+      />
       <motion.h1
         initial={{ x: -50, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.4 }}
         className="text-6xl md:text-9xl font-extrabold text-black "
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
       >
         Hey,
       </motion.h1>
@@ -22,6 +69,8 @@ const Hero = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         className="text-6xl md:text-9xl font-bold text-black "
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
       >
         I&apos;m Khaled
       </motion.h1>
@@ -49,7 +98,7 @@ const Hero = () => {
         </motion.small>
       </div>
     </div>
-  );
+  </>;
 };
 
 export default Hero;

@@ -17,7 +17,7 @@ const Introduction = () => {
   <div className="w-full py-20 h-2/3 bg-black text-white flex items-center justify-center">
   <p 
   ref={element}
-  className="flex flex-wrap text-5xl self-start p-2 w-full md:w-4/5 font-extrabold">
+  className="flex flex-wrap text-3xl md:text-5xl self-start p-2 w-full md:w-4/5 font-extrabold">
     {words.map((word,i)=>{
         const start = i / words.length
         const end = (i + 1) / words.length;
