@@ -29,7 +29,7 @@ const CardItems = ({title,cards,link,type}:Props) => {
 {    cardModal.state && <Modal type={type} description={cardModal.description} image={cardModal.image} onClose={closeModal} title={cardModal.title} url={cardModal.url} skills={cardModal.skills}  />}
     </AnimatePresence>
 
-    <div className='relative bg-white  pt-30 flex flex-wrap items-center justify-start gap-4 w-10/12'>
+    <div className='relative bg-white pt-30 flex flex-wrap items-center justify-start gap-4 w-10/12'>
       <h3 className='w-full text-2xl md:text-4xl font-extrabold text-black'>#{title}</h3>
         {cards.map((card, index) => (
           <motion.div
@@ -40,10 +40,10 @@ const CardItems = ({title,cards,link,type}:Props) => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             onClick={()=>setCardModal({state : true , image : card.image , title : card.title , description : card.description , url : card.url , skills : card.skills || []})}
           >
-            <Card title={card.title} description={card.description} image={card.image} url={card.url} date={card.date} />
+            <Card title={card.title} description={card.description} image={card.image} url={card.url} date={card.date} type={type}/>
           </motion.div>
         ))}
-      { link && <Link href={link} target="_blank" className='text-blue-600 w-full cursor-pointer hover:text-blue-800 text-end'>#View_more</Link>}
+      { link && <Link href={link} target="_blank" className='text-blue-600 w-full cursor-pointer hover:text-blue-800 pb-8 md:pb-4 text-end'>#View_more</Link>}
     </div>
     </>
 };

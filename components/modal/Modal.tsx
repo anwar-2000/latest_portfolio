@@ -42,11 +42,11 @@ const Modal = ({title,description,image,url,onClose,skills,type}:Props) => {
         exit="exit"
         className='w-full md:w-4/5 h-[90vh] overflow-y-auto z-20 bg-white text-white flex flex-col items-start justify-start gap-4 rounded-tl-2xl rounded-tr-2xl '
         >
-        <div className="relative w-full">
-            <img src={image}  alt={title + " " + "image"} className={`w-full rounded-md ${image === "/images/studpro.png" && "blur-sm"} `}/>
+        <div className={`relative w-full ${image === "/images/studpro.png" && "bg-black "}`}>
+            <img src={image}  alt={title + " " + "image"} className={`w-full rounded-md ${image === "/images/studpro.png" && "opacity-10 md:blur-md"} `}/>
         </div>
         <div className="self-stretch w-full bg-white text-black flex flex-col items-start justify-start pb-8">
-        <h3 className='pl-4 text-4xl pb-4'>{title}</h3>
+        <h3 className='pl-4 text-2xl md:text-4xl pb-4'>{title}</h3>
         <h6 className='font-bold pl-4'>{type === "certificates" ? "Certificate description : " : "Project Description"}</h6>
         <p className='font-light text-lg pl-4 w-10/12'>{description}</p>
        {skills.length > 0 && <h6 className='font-bold pl-4'>Tech Stack :</h6>}
