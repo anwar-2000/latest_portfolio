@@ -1,9 +1,8 @@
 "use client"
 import { recommendation } from '@/consts/texts';
-import { motion, useScroll } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Link from 'next/link';
-import React, { useRef } from 'react'
-import Word from './Word';
+import React from 'react'
 
 interface Props {}
 
