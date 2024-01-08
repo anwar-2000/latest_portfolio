@@ -83,7 +83,7 @@ const Hero = () => {
           width={400}
           src="/images/img4.jpg"
           alt="Me"
-          className="mt-4 md:mt-20 md:h-[440px]"
+          className="mt-4 md:mt-20 md:h-[440px] rounded-lg"
         />
         <motion.small
           initial={{ y: 30, opacity: 0 }}

@@ -20,7 +20,7 @@ const Recommendation = () => {
         <Link href="https://www.linkedin.com/in/michaelsmets86/" className='text-blue-700'>Open Linkedin</Link>
     </div>
     <q 
-    className="flex flex-wrap md:text-3xl mt-4 self-start w-4/5 font-extralight text-black">
+    className="flex flex-wrap md:text-3xl mt-4 self-start w-4/5 font-light text-black">
       {words.map((word,i)=>{
           return <motion.span  className='mx-1' key={i} initial={{opacity : 0}} whileInView={{opacity : 1}} viewport={{once:true}} transition={{ delay: i * 0.1 }}>{word}</motion.span>
       }
