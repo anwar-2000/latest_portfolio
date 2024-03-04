@@ -23,8 +23,8 @@ export const Projects = [
       "Reactjs",
       "Papaparse"
     ],
-    description: "During my previous internship, we frequently worked with CSV files. However, we encountered an issue where CSV files were exported with unnecessary empty rows or columns. To tackle this problem, I developed a solution using Python's CSV library. This project allows users to upload CSV files, render them, and provides the capability to edit their contents. While there are still ongoing efforts to implement more complex behaviors and logic, the primary functionality is already complete.",
-    image: "/images/csvizualiser.png",
+    description:"Pendant mon précédent stage, nous avons souvent travaillé avec des fichiers CSV. Cependant, nous avons rencontré un problème où les fichiers CSV étaient exportés avec des lignes ou des colonnes vides inutiles. Pour résoudre ce problème, j'ai développé une solution en utilisant la bibliothèque CSV de Python. Ce projet permet aux utilisateurs de télécharger des fichiers CSV, de les afficher et de modifier leur contenu. Bien qu'il y ait encore des efforts en cours pour implémenter des comportements et des logiques plus complexes, la fonctionnalité principale est déjà complète.",
+     image: "/images/csvizualiser.png",
     url: "https://github.com/anwar-2000/CsVisualizer.git",
   },
   {
