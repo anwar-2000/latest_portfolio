@@ -56,35 +56,35 @@ const Hero = () => {
         initial={{ x: -50, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.4 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-6xl md:text-9xl font-extrabold text-black "
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
-        Hey,
-      </motion.h1>
-      <motion.h1
-        initial={{ x: 40, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="text-6xl md:text-9xl font-bold text-black z-20"
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-      >
-        I&apos;m Khaled
-      </motion.h1>
-      <div className="w-full flex flex-wrap items-center justify-between">
-        <motion.img
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          Hey,
+        </motion.h1>
+        <motion.h1
+          initial={{ x: 40, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 3, delay: 1 }}
-          width={400}
-          src="/images/img4.jpg"
-          alt="Me"
-          className="mt-4 md:mt-20 md:h-[440px] rounded-lg"
-        />
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-6xl md:text-9xl font-bold text-black z-20"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
+          Je suis Khaled
+        </motion.h1>
+        <div className="w-full flex flex-wrap items-center justify-between">
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 3, delay: 1 }}
+            width={400}
+            src="/images/img4.jpg"
+            alt="Me"
+            className="mt-4 md:mt-20 md:h-[440px] rounded-lg"
+          />
         <motion.small
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
