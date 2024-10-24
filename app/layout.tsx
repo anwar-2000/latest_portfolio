@@ -5,7 +5,7 @@ import './globals.css'
 
 
 export const metadata: Metadata = {
-  title: "Khaled - Développeur web",
+  title: "Khaled Khaouani ",
   description: 'A full stack web developer specializing in Next.js and React I have a diverse skill set that allows me to tackle complex challenges with ease', 
   creator : "khaled khaouani",
   icons : [
