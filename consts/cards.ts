@@ -1,6 +1,7 @@
-export const Projects = [
+export const projects = [
   {
     title: "StudPro",
+    type : "Stage",
     skills: [
       "Méthode Agiles",
       "GitLab",
@@ -14,11 +15,12 @@ export const Projects = [
     ],
     description:
       "Pendant mon stage chez StudPro , j'ai réussi à convertir avec succès les conceptions élaborées par les designers en interfaces utilisateur attrayantes en utilisant ReactJS et NextJS. J'ai également créé des APIs REST et mis en place une authentification complète en utilisant à la fois la vérification par e-mail et par SMS. J'ai contribué à l'expérience utilisateur en créant plusieurs pages et formulaires pour les comptes. De plus, j'ai résolu efficacement les problèmes de codage, assurant ainsi la stabilité et la fonctionnalité optimale des applications web.",
-    image: "/images/studpro.png",
+    image: "/images/studpro_design.png",
     url: "",
   },
   {
     title: "CsVizualiser",
+    type : "Projet",
     skills: [
       "Reactjs",
       "Papaparse"
@@ -29,6 +31,7 @@ export const Projects = [
   },
   {
     title: "CodingFact",
+    type : "Projet",
     skills: [
       "Reactjs",
       "Google/Youtube API",
@@ -38,22 +41,8 @@ export const Projects = [
     url: "https://github.com/anwar-2000/am_faster_multiplayer-game.git",
   },
   {
-    title: "Am_faster",
-    skills: [
-      "Reactjs",
-      "SocketsIO",
-      "NodeJs",
-      "ExpressJs",
-      "Docker",
-      "Docker compose",
-      "PotgreSQL",
-    ],
-    description: "Le Jeu de Dactylographie Multijoueur est une expérience interactive où plusieurs joueurs peuvent s'affronter dans des défis de dactylographie en temps réel. Créé avec Node.js, React, Express, Socket.IO et PostgreSQL, ce jeu offre une plateforme divertissante pour mettre à l'épreuve vos compétences en frappe rapide tout en défiant vos amis ou d'autres joueurs en ligne",
-    image: "/images/game.png",
-    url: "https://github.com/anwar-2000/am_faster_multiplayer-game.git",
-  },
-  {
     title: "Mon Salon Connect",
+    type : "Projet",
     skills: [
       "Reactjs",
       "Nextjs13",
@@ -71,25 +60,8 @@ export const Projects = [
     url: "https://monsalonconnect.com",
   },
   {
-    title: "My Cyber Shop",
-    skills: [
-      "Reactjs",
-      "Nextjs13",
-      "TypeScript",
-      "ReactQuery",
-      "NextAUTH",
-      "MongoDB",
-      "Stripe",
-      "Redux Toolkit",
-      "Cloudinary",
-    ],
-    description:
-      "Ce projet est un plateforme en ligne qui propose une large gamme d'électroménagers, de meubles et de packs informatiques. Les utilisateurs peuvent créer un compte sur le site pour accéder à différentes fonctionnalités telles que la gestion de leur panier d'achats, la sauvegarde de leurs informations personnelles et l'historique de leurs commandes. Le site permet également aux utilisateurs de faire des paiements en ligne de manière sécurisée, en utilisant divers modes de paiement tels que les cartes de crédit, les virements bancaires ou les portefeuilles électroniques. Les produits sont présentés avec des descriptions détaillées, des images et des avis des clients, ce qui aide les utilisateurs à prendre des décisions éclairées. Grâce à cette plateforme, les utilisateurs peuvent facilement parcourir les différentes catégories de produits, comparer les prix et les caractéristiques, et passer des commandes en toute simplicité depuis le confort de leur domicile. Le site ecommerce offre une expérience pratique et sécurisée pour les achats en ligne d'électroménagers, de meubles et de packs informatiques.",
-    image: "/images/mycybershop.png",
-    url: "https://mycybershop.store",
-  },
-  {
     title: "Online Screen Recorder",
+    type : "Projet",
     skills: [
       "Reactjs",
       "Express",
@@ -103,24 +75,16 @@ export const Projects = [
     image: "/images/screen.png",
     url: "",
   },
-  {
-    title: "Driiiblle clone",
-    skills: [
-      "Reactjs",
-      "Nextjs13",
-      "TypeScript",
-      "NextAUTH",
-      "Grafbase",
-      "GraphQL",
-      "Stripe",
-    ],
-    description:
-      " This project is a clone of Dribbble, a popular platform for showcasing and discovering creative work. It uses the NEXT13 APP folder as the main codebase, along with GraphQL for API communication and Grafbase as the database. Authentication is implemented using NEXTAUTH.",
-    image: "/images/friible.png",
-    url: "",
-  },
+
 ];
 export const certificates = [
+  {
+    title: "IBM Data Analyst Professional Certificate",
+    date: "commencé le : 15-10-2024",
+    description:"",
+    image: "/images/data_analyst.png",
+    url: "https://www.coursera.org/professional-certificates/ibm-data-analyst",
+  },
   {
     title: "React - The Complete Guide 2024 (incl. React Router & Redux)",
     date: "22-10-2022",
@@ -139,7 +103,7 @@ export const certificates = [
   },
   {
     title: "Docker & Kubernetes: The Practical Guide [2024 Edition]",
-    date: "Loading ... 80%",
+    date: "03-05-2024",
     description:
       "This comprehensive course covers a range of topics related to Docker and Kubernetes. It starts with an introduction to Docker, explaining containers and their benefits. The course provides detailed setup instructions for macOS and Windows, delves into core concepts like containers and images, and teaches how to create custom images and run containers. Participants will gain proficiency in essential Docker commands and learn about data management, container networking, and single/multi-container projects. Additionally, the course explores deployment methods, including manual deployment and using services like AWS ECS. Moving into Kubernetes, participants will understand its core concepts, resource creation, and deployment processes. The course also covers Kubernetes networking, data handling, and project deployment, exemplified with AWS EKS. Throughout, the material is presented through slides, theory, and practical examples and demonstrations.",
     image: "/images/dockerUdemy.png",
@@ -147,7 +111,7 @@ export const certificates = [
   },
   {
     title: "JavaScript Algorithms and Data Structures Masterclass",
-    date: "Loading ... 75%",
+    date: "01-09-2023",
     description:
       "I start by teaching you how to analyze your code's time and space complexity using Big O notation.  We cover the ins and outs of Recursion.  We learn a 5-step approach to solving any difficult coding problem. We cover common programming patterns. We implement popular searching algorithms. We write 6 different sorting algorithms: Bubble, Selection, Insertion, Quick, Merge, and Radix Sort.   Then, we switch gears and implement our own data structures from scratch, including linked lists, trees, heaps, hash tables, and graphs.  We learn to traverse trees and graphs, and cover Dijkstra's Shortest Path Algorithm.  The course also includes an entire section devoted to Dynamic Programming.",
     image: "/images/jsUdemy.png",

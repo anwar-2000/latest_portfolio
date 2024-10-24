@@ -30,7 +30,6 @@ const CardItems = ({title,cards,link,type}:Props) => {
     </AnimatePresence>
 
     <div className='relative bg-white pt-30 flex flex-wrap items-center justify-start gap-4 w-10/12'>
-      <h3 className='w-full text-2xl md:text-4xl font-extrabold text-black'>#{title}</h3>
         {cards.map((card, index) => (
           <motion.div
             key={index}

@@ -13,7 +13,7 @@ const Recommendation = () => {
     return <>
     <div className="w-10/12 py-14 flex flex-col lg:flex-row items-start justify-center ">
     <div className="flex flex-col items-start justify-start gap-4 text-black">
-        <h3 className='self-start text-2xl md:text-4xl font-extrabold text-black'>#Recommendations</h3>
+  
         <h5>— Michael Smets —</h5>
         <small className='md:w-9/12'>Freelance Ingénieur Full Stack / Conseil et développement web et mobile en se basant sur l'informatique durable (Green It)Freelance Ingénieur Full Stack / Conseil et développement web et mobile en se basant sur l'informatique durable <br /> December 22, 2023, Michael managed khaled directly</small>
         <Link href="https://www.linkedin.com/in/michaelsmets86/" className='text-blue-700'>Open Linkedin</Link>

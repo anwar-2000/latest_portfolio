@@ -68,7 +68,7 @@ const Hero = () => {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-6xl md:text-9xl font-bold text-black "
+        className="text-6xl md:text-9xl font-bold text-black z-20"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
@@ -90,11 +90,9 @@ const Hero = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.7, duration: 0.6 }}
-          className="text-black w-full md:w-3/5 self-end mr-18 mt-4 md:pt-16 text-3xl md:text-6xl font-light"
+          className="text-black w-full md:w-3/5 self-end mr-18 mt-4 md:pt-1 text-xl md:text-5xl font-light z-20"
         >
-          — a full stack web developer specializing in Next.js and React I have
-          a diverse skill set that allows me to tackle complex challenges with
-          ease.
+          — En tant qu&apos;enthousiaste de l&apos;informatique spécialisé en Next.js et React, je possède un ensemble de compétences variées qui me permettent de relever des défis complexes avec aisance.
         </motion.small>
       </div>
     </div>

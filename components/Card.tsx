@@ -11,7 +11,7 @@ type Props = {
 }
 
 const Card = ({title,url,image,date,type}:Props) => {
-  return <div className='cursor-pointer bg-slate-100 text-slate-700  hover:bg-slate-200 relative w-[320px] min-h-[320px] flex flex-col items-start justify-start gap-2  rounded-md'>
+  return <div className='p-2 cursor-pointer bg-white border-2 text-slate-700  hover:bg-blue-400 relative w-[350px] min-h-[390px] flex flex-col items-start justify-start gap-2 rounded-md'>
     <div className="w-full relative flex items-center justify-center p-2">
       <img src={image} alt={title} className={`w-11/12 h-40 rounded-lg ${image === "/images/studpro.png" && "blur-sm"} `}/>
     </div>

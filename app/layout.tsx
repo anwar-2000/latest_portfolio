@@ -5,11 +5,11 @@ import './globals.css'
 
 
 export const metadata: Metadata = {
-  title: "Hola 👋 , c'est moi ! khaled khaouani",
+  title: "Khaled - Développeur web",
   description: 'A full stack web developer specializing in Next.js and React I have a diverse skill set that allows me to tackle complex challenges with ease', 
   creator : "khaled khaouani",
   icons : [
-    {rel : "icon",url:"/images/wave.png",fetchPriority:"auto"}
+    {rel : "icon",url:"/images/img4.jpg",fetchPriority:"auto"}
   ]
 }
 
