@@ -38,7 +38,7 @@ export const projects = [
     ],
     description: "CODINGFACT est une plateforme d'apprentissage interactive conçue pour les passionnés de codage, Avec une communauté active de plus de 50 utilisateurs pendant une période de 6 mois, offrant un environnement de codage intégré avec un compilateur, ainsi que des tutoriels et une fonctionnalité de recherche pour faciliter l'apprentissage. Grâce à ses fonctionnalités avancées, les utilisateurs peuvent acquérir de nouvelles compétences en programmation tout en découvrant des faits intéressants sur le monde de la technologie.",
     image: "/images/codingfact.png",
-    url: "https://github.com/anwar-2000/am_faster_multiplayer-game.git",
+    url: "",
   },
   {
     title: "Mon Salon Connect",

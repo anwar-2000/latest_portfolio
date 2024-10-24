@@ -23,14 +23,14 @@ const Project = ({title,image,description,link,index,type}:Props) => {
         <div className="relative w-full h-full ">
             <img src={image} alt={title + " " + "images"}  className="w-full h-full rounded-md" />
         </div>
-        <div className="flex flex-col items-start justify-start w-5/12  p-2 ">
+        <div className="flex flex-col items-start justify-start w-full   p-2 ">
           <div className="flex flex-col items-start justify-start  ">
                 <h1 className='font-extrabold text-xl md:text-4xl'>{title}</h1>
                 <Link href={link!} target="_blank"><small className='text-blue-800'>{link}</small></Link>
           </div>
           <small>{type}</small>
-          <div className="py-4">
-            <h4><span className='font-extrabold'>Tech: </span>Reactjs, Nextjs, Typescript, Docker-compose, Prisma, NextAUTH, PostgreSQL, Gitlab. </h4>
+          <div className="py-4 w-full">
+            <h4 className=''><span className='font-extrabold'>Tech: </span>Reactjs, Nextjs, Typescript, Docker-compose, Prisma, NextAUTH, PostgreSQL, Gitlab. </h4>
           </div>
                 {/* <h4>{description}</h4> */}
         </div>

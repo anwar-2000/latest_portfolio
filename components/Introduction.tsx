@@ -14,7 +14,7 @@ const Introduction = () => {
     offset : ["start 0.9","start 0.2"]
   })
   return <>
-  <div className="w-full md:p-20 md:h-screen bg-black text-black flex items-center justify-center">
+  <div className="w-full md:p-20 p-10 h-[20rem] md:h-screen bg-black text-black flex items-center justify-center">
   <p 
   ref={element}
   className="text-slate-300 w-full flex flex-wrap text-xl md:text-6xl self-start md:p-2 md:w-6/5 font-extrabold">
